@@ -1,0 +1,28 @@
+{
+  "name": "lotr",
+  "version": "1.0.0",
+  "description": "Een training met bootstrap op Lord of the Rings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SelcukhanK/demoLOTR.git"
+  },
+  "keywords": [
+    "Bootstrap.",
+    "demo.",
+    "LotR"
+  ],
+  "author": "Selcukhan Kasirga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SelcukhanK/demoLOTR/issues"
+  },
+  "homepage": "https://github.com/SelcukhanK/demoLOTR#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0"
+  }
+}

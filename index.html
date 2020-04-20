@@ -5,52 +5,60 @@
     <title>Lord of the Rings</title>
     <meta name="author" content="Theo den Blanken">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
 
   <body lang="nl">
     <!-- navigatie -->
-    <nav>
-      <a href="#">LOTR</a>
-
-      <ul>
-        <li class="active">
-          <a href="#">Home
-          </a>
-        </li>
-        <li >
-          <a href="#inleiding">Inleiding</a>
-        </li>
-        <li >
-          <a href="#">Verhaal
-          </a>
-          <div>
-            <a href="#fellow">Fellowship of the Ring</a>
-            <a href="#twoTowers">Two Towers</a>
-            <a href="#kingReturn">Return of the King</a>
-          </div>
-        </li>
-
-      </ul>
-      <form >
-        <input type="search" placeholder="Zoeken">
-        <button type="submit">Zoek</button>
-      </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">LOTR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inleiding">Inleiding</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Verhaal
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#fellow">Fellowship of the Ring</a>
+              <a class="dropdown-item" href="#twoTowers">Two Towers</a>
+              <a class="dropdown-item" href="#kingReturn">Return of the King</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Zoeken" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zoek</button>
+        </form>
+      </div>
     </nav>
 
     <!-- jumbotron -->
 
-    <div>
-      <h1>Lord of the Rings</h1>
-      <p>The Fellowship of the Ring, The Two Towers, The Return of the King
-      </p>
-      <p>Een filmtrilogie gebaseerd op J.R.R. Tolkiens gelijknamige boek. Het verhaal vertelt over de hobbit Frodo Balings, die een magische ring moet vernietigen voordat de duistere Sauron hem terugvindt.
-      </p>
-    </div>
+    <header class="jumbotron">
+      <div class="container-fluid"> 
+        <h1 class="display-4">Lord of the Rings</h1>
+        <p class="lead">The Fellowship of the Ring, The Two Towers, The Return of the King
+        </p>
+        <p>Een filmtrilogie gebaseerd op J.R.R. Tolkiens gelijknamige boek. Het verhaal vertelt over de hobbit Frodo Balings, die een magische ring moet vernietigen voordat de duistere Sauron hem terugvindt.
+        </p>
+      </div>
+    </header>
 
-    <div id="inleiding">
-
-      <section >
-        <img src="img/frodoRing.jpg" alt="Frodo met de ring">
+    <div id="inleiding" class="container-fluid">
+      <div class="row p-4">
+        
+      <section class="col-md-6 col-lg-3 p-4">
+        <img src="img/frodoRing.jpg" alt="Frodo met de ring" class="img-fluid">
         <article >
           <h4>Lord of the Rings</h4>
           <p>Een oeroude ring is weer gevonden. Door een ongelukkige samenloop komt deze in het bezit van Frodo. De tovenaar Gandalf ontdekt dat de donkere kracht Sauron naar deze ring op zoek is. Daarom moet de Ring koste wat kost vernietigd worden.
@@ -64,8 +72,8 @@
       </section>
       <!-- einde kolom -->
 
-      <section >
-        <img src="img/leolas.jpg" alt="Leolas, prins van de Elfen">
+      <section class="col-md-6 col-lg-3 p-4">
+        <img src="img/leolas.jpg" alt="Leolas, prins van de Elfen" class="img-fluid">
         <article>
           <h4>Fantasy</h4>
           <p>Het verhaal speelt zich af in fantasy-wereld: Middle-earth waar de leefstijl van de mensen doet denken aan onze donkere Middeleeuwen. De rollen worden ingevuld door mensen en mensachtige wezens zoals Hobbits, Elfen, tovenaars, Orks en dwergen.
@@ -78,8 +86,8 @@
       </section>
       <!-- einde kolom -->
 
-      <section >
-        <img src="img/verberg.jpg" alt="Hobbits verbergen zich voor Nazgul ruiter">
+      <section class="col-md-6 col-lg-3 p-4">
+        <img src="img/verberg.jpg" alt="Hobbits verbergen zich voor Nazgul ruiter" class="img-fluid">
         <article >
           <h4>Boek</h4>
           <p>In de Ban van de Ring is geschreven door de taalkundige en universitair professor J.R.R. Tolkien. Het verhaal begon als een vervolg op De Hobbit (1937), maar groeide uit tot een veel groter werk. Het werd in stadia geschreven tussen 1937 en 1949.
@@ -92,8 +100,8 @@
       </section>
       <!-- einde kolom -->
 
-      <section >
-        <img src="img/nazgulruiters.jpg" alt="Nazgul-ruiters in de achtervolging">
+      <section class="col-md-6 col-lg-3 p-4">
+        <img src="img/nazgulruiters.jpg" alt="Nazgul-ruiters in de achtervolging" class="img-fluid">
         <article >
           <h4>Muziek</h4>
           <p>De filmmuziek van The Fellowship of the Ring is gecomponeerd door Howard Shore, net als de muziek van de andere twee films. Bij deze film zong de Ierse zangeres Enya twee nummers ('Aníron' en 'May it be'). Edward Ross zong de tekst voor het nummer
@@ -105,7 +113,7 @@
         </button>
       </section>
       <!-- einde kolom -->
-
+      </div>
       <!-- einde rij -->
     </div>
     <!-- einde container -->
@@ -300,6 +308,7 @@
         </a>
       </div>
     </footer>
-
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
